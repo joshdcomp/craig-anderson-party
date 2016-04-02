@@ -1,0 +1,25 @@
+// Global styles across all screen sizes, usually stuff like colors and typography
+#{$s-nav} {
+  &--li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &--link {
+    padding: 4px 15px;
+    text-decoration: none;
+    transition: all 200ms ease;
+    font-family: $t-nav-link-ff;
+    font-weight: $t-nav-link-fw;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+
+    &:link, &:visited {
+      color: $c-nav-link;
+    }
+
+    &:hover {
+      color: $c-nav-link-hover;
+    }
+  }
+}

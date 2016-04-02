@@ -1,0 +1,23 @@
+$_lato: (
+    'font-family': #{'Lato', sans-serif},
+    'font-weight': (
+        'normal': 400,
+        'bold': 700
+    )
+);
+
+$_merriweather: (
+    'font-family': #{'Merriweather', serif},
+    'font-weight': (
+        'light': 300,
+        'normal': 400,
+        'bold': 700
+    )
+);
+
+$t-header-ff:    _get($_lato, 'font-family') !default;
+$t-header-fw:    _get($_lato, 'font-weight', 'bold') !default;
+
+$t-text-ff:      _get($_merriweather, 'font-family') !default;
+$t-text-fw:      _get($_merriweather, 'font-weight', 'regular') !default;
+$t-text-bold-fw: _get($_merriweather, 'font-weight', 'bold') !default;

@@ -1,0 +1,24 @@
+/**
+ * Set global flags for any indices
+ */
+$_IS_IE: false;
+$_IS_PRINT: false;
+
+$d-general-spacing: 20px;
+$d-global_container-width: (
+  'small': 100%,
+  'medium': 100%,
+  'large': 1024px
+);
+
+$c-pine:  rgb(53, 105, 51);
+$c-hay:   rgb(204, 165, 44);
+$c-pond:  rgb(98, 190, 202);
+$c-fall:  rgb(211, 134, 60);
+$c-cloud: rgb(236, 234, 231);
+
+$c-learn: $c-pond;
+$c-lookup: $c-hay;
+$c-submit: $c-pine;
+
+@import "importer";

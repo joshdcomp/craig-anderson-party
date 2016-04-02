@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Josh Compton -- ui designer, webapp dev -- @joshdcomp
+    Matt Bush    -- iOS app developer       -- @mtthwbsh
+    Gabe Cooper  -- illustrator             -- @gabeorlacooper
+
+# THANKS
+
+    # friends who contributed illustration
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS, shoelace
+    modernizr, react, browserify
