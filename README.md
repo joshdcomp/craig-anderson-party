@@ -1,8 +1,8 @@
-# Gaggle
+# CraigAnderson.party
 An informative resource for discovering and looking up collective nouns
 
 ## Hello world
-Gaggle's hello world is (hopefully) very simple. Basic system dependencies are:
+Hello world is (hopefully) very simple. Basic system dependencies are:
 - Node/npm
 - SASS
 - Grunt CLI
@@ -15,7 +15,7 @@ After you have those set up, just do:
 
 Pass a `--watch` parameter (looks like: `$grunt --watch`) to continuously compile files as you change your files.
 
-This project was built to run solely in the browser, so no need for any server-side setup unless you want to...I really don't even know. 
+This project was built to run solely in the browser, so no need for any server-side setup unless you want to...I really don't even know.
 
 ## Grunt
 Grunt has several tasks set up if you don't want to re-compile everything at once:

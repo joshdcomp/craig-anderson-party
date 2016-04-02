@@ -16,9 +16,7 @@ var App = React.createClass({
   render : function() {
     return (
       <div className="app_wrapper">
-        <Header  />
         {this.props.children}
-        <Footer  />
       </div>
     )
   },

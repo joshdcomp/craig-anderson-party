@@ -1,7 +1,18 @@
 // Global styles across all screen sizes, usually stuff like colors and typography
+@keyframes bump {
+  0% {
+    font-size: $t-view-title-fs;
+  }
+  50% {
+    font-size: $t-view-title-bump-fs;
+  }
+  100% {
+    font-size: $t-view-title-fs;
+  }
+}
+
 #{$s-view} {
   border-top: solid thin $c-view-hairline;
-  background-color: $c-view-bg;
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -9,6 +20,7 @@
     width: 66%;
     max-width: 1024px;
     margin: auto;
+    text-align: center;
   }
 
   &--title {
@@ -17,25 +29,18 @@
     font-size: $t-view-title-fs;
     margin-bottom: 20px;
     color: $c-view-title-text;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #3da514;
+    animation: bump 100ms ease 900ms infinite;
+
+    position: fixed;
+    line-height: 0;
+    top: 50%;
+    width: 100%;
+    left: 0;
   }
 
-  &--factoid {
-    font-family: $t-view-factoid-ff;
-    font-weight: $t-view-factoid-fw;
-    font-size: $t-view-factoid-fs;
-    font-style: italic;
-    margin-bottom: 80px;
-    color: $c-view-factoid-text;
-    line-height: 1.5;
-
-    strong {
-      font-weight: $t-view-factoid_term-fw;
-    }
-  }
-
-  &--cta_wrapper {
-    text-align: center;
-    clear: both;
-    margin-top: 80px;
+  &--boss {
+    width: 450px;
   }
 }

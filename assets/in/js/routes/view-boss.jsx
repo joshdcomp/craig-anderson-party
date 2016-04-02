@@ -12,7 +12,7 @@ var ViewLearn = React.createClass({
   },
   getInitialState: function() {
     return {
-      title: 'biggest'
+      title: 'biggest',
       switcher: false,
     };
   },
@@ -28,7 +28,7 @@ var ViewLearn = React.createClass({
 
   componentDidMount: function() {
     this.setState({
-      switcher: setInterval(this.biggestBoss.bind(this), 500);
+      switcher: setInterval(this.biggestBoss, 900)
     });
   },
 
@@ -39,10 +39,13 @@ var ViewLearn = React.createClass({
   // Render Functions
   //--
   render: function() {
+    var titleClasses = [
+      'view--title',
+    ];
     return (
       <div className="view view-learn">
         <div className="view--content">
-          <h2 className="view--title">{this.state.title}</h2>
+          <h2 className={titleClasses.join(' ')}>{this.state.title}</h2>
 
           <img
             className="view--boss"
